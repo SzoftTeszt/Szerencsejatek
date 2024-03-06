@@ -1,0 +1,5 @@
+app-tippek{
+    background-color: aqua;
+    max-height: 25vh;
+    overflow-y: scroll;
+}

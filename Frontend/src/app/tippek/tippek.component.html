@@ -1,0 +1,30 @@
+<!-- {{tippek|json}} -->
+
+<div class="row my-3 fw-bold">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        {{oszlop.text}}
+    </div>
+    <div class="col">
+        Műveletek
+    </div>
+</div>
+
+<div  class="row my-1">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        <input [(ngModel)]="ujTipp[oszlop.key]" type="number" class="form-control">     
+       
+    </div>
+    <div class="col">
+        Műveletek
+    </div>
+</div>
+
+<div *ngFor="let tipp of tippek" class="row my-1">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        <input [(ngModel)]="tipp[oszlop.key]" type="number" class="form-control">     
+       
+    </div>
+    <div class="col">
+        Műveletek
+    </div>
+</div>

@@ -1,0 +1,7 @@
+<ng-container *ngFor="let jatekos of jatekosok">
+<div class="row">
+    <span class="display-4 my-2">{{jatekos.name}}</span>
+    <button (click)="jatekos.tippLatszik= !jatekos.tippLatszik" type="button" class="btn btn-primary">Tippek</button>
+    <app-tippek *ngIf="jatekos.tippLatszik" [tippek]="jatekos.tipp"></app-tippek>
+</div>
+</ng-container>
